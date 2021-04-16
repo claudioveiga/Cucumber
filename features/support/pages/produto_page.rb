@@ -23,150 +23,150 @@ class ProdutoPage < BasePage
     #Produtos
 
         # Link de acesso ao item backpack
-            def link_backpack
+            def link_item1
                 driver.find_element(:css, '#item_4_title_link > div')
             end
         #end
 
         # Texto descritivo do item backpack
-            def text_descBackpack
+            def text_descItem1
                 driver.find_element(:css, 'div.inventory_list > div:nth-child(1) div.inventory_item_label > div')
             end
         #end
 
         # Preço do item backpack
-            def text_priceBackpack
+            def text_priceItem1
                 driver.find_element(:css, 'div.inventory_list > div:nth-child(1) div.pricebar > div')
             end
         #end
 
         # Botão de adicionar/ remover do item backpack
-            def btn_addRemBackpack
+            def btn_addRemItem1
                 driver.find_element(:css, 'div.inventory_list > div:nth-child(1) button')
             end
         #end
 
 
         # Link de acesso ao item Bike Light
-            def link_bikeLight
+            def link_Item2
                 driver.find_element(:css, '#item_0_title_link > div')
             end
         #end
 
         # Texto descritivo do item Bike Light
-            def text_descbikeLight
+            def text_descItem2
                 driver.find_element(:css, 'div.inventory_list > div:nth-child(2) div.inventory_item_label > div')
             end
         #end
 
         # Preço do item Bike Light
-            def text_priceBikeLight
+            def text_priceItem2
                 driver.find_element(:css, 'div.inventory_list > div:nth-child(2) div.pricebar > div')
             end
         #end
 
         # Botão de adicionar/ remover do item Bike Light
-            def btn_addRemBikeLight
+            def btn_addRemItem2
                 driver.find_element(:css, 'div.inventory_list > div:nth-child(2) div.pricebar > button')
             end
         #end
 
             
         # Link de acesso ao item Bolt T-Shirt
-            def link_tShirt
+            def link_Item3
                 driver.find_element(:css, '#item_1_title_link > div')
             end
         #end
 
         # Texto descritivo do item T-Shirt
-            def text_descTShirt
+            def text_descItem3
                 driver.find_element(:css, 'div.inventory_list > div:nth-child(3) div.inventory_item_label > div')
             end
         #end
 
         # Preço do item T-Shirt
-            def text_priceTShirt
+            def text_priceItem3
                 driver.find_element(:css, 'div.inventory_list > div:nth-child(3) div.pricebar > div')
             end
         #end
 
         # Botão de adicionar/ remover do item T-Shirt
-            def btn_addRemTShirt
+            def btn_addRemItem3
                 driver.find_element(:css, 'div.inventory_list > div:nth-child(3) div.pricebar > button')
             end
         #end
 
 
-        # Link de acesso ao item Jacket
-            def link_jacket
+        # Link de acesso ao item Item4
+            def link_Item4
                 driver.find_element(:css, '#item_5_title_link > div')
             end
         #end
 
-        # Texto descritivo do item Jacket
-            def text_descJacket
+        # Texto descritivo do item Item4
+            def text_descItem4
                 driver.find_element(:css, 'div.inventory_list > div:nth-child(4) div.inventory_item_label > div')
             end
         #end
 
-        # Preço do item Jacket
-            def text_priceJacket
+        # Preço do item Item4
+            def text_priceItem4
                 driver.find_element(:css, 'div.inventory_list > div:nth-child(4) div.pricebar > div')
             end
         #end
 
-        # Botão de adicionar/ remover do item Jacket
-            def btn_addRemJacket
+        # Botão de adicionar/ remover do item Item4
+            def btn_addRemItem4
                 driver.find_element(:css, 'div.inventory_list > div:nth-child(4) div.pricebar > button')
             end
         #end
 
 
-        # Link de acesso ao item Onesie
-            def link_onesie
+        # Link de acesso ao item Item5
+            def link_Item5
                 driver.find_element(:css, '#item_2_title_link > div')
             end
         #end
 
-        # Texto descritivo do item Onesie
-            def text_descOnesie
+        # Texto descritivo do item Item5
+            def text_descItem5
                 driver.find_element(:css, 'div.inventory_list > div:nth-child(5) div.inventory_item_label > div')
             end
         #end
 
-        # Preço do item Onesie
-            def text_priceOnesie
+        # Preço do item Item5
+            def text_priceItem5
                 driver.find_element(:css, 'div.inventory_list > div:nth-child(5) div.pricebar > div')
             end
         #end
         
-        # Botão de adicionar/ remover do item Onesie
-            def btn_addRemOnesie
+        # Botão de adicionar/ remover do item Item5
+            def btn_addRemItem5
                 driver.find_element(:css, 'div.inventory_list > div:nth-child(5) div.pricebar > button')
             end
         #end
 
 
         # Link de acesso ao item Red T-shirt
-            def link_redTshirt
+            def link_Item6
                 driver.find_element(:css, '#item_3_title_link > div')
             end
         #end
 
         # Texto descritivo do item Red T-shirt
-            def text_descRedTshirt
+            def text_descItem6
                 driver.find_element(:css, 'div.inventory_list > div:nth-child(6) div.inventory_item_label > div')
             end
         #end
 
         # Preço do item Red T-shirt
-            def text_priceRedTshirt
+            def text_priceItem6
                 driver.find_element(:css, 'div.inventory_list > div:nth-child(6) div.pricebar > div')
             end
         #end
 
         # Botão de adicionar/ remover do item Red T-shirt
-            def btn_addRemRedTshirt
+            def btn_addRemItem6
                 driver.find_element(:css, 'div.inventory_list > div:nth-child(6) div.pricebar > button')
             end
         #end
@@ -226,44 +226,44 @@ class ProdutoPage < BasePage
 
     # Adicionando os itens
 
-        def addToCartBackpack()
-            btn_addRemBackpack.click()
+        def addToCartItem1()
+            btn_addRemItem1.click()
         end
 
-        def addToCartJacket()
-            btn_addRemJacket.click()
+        def addToCartItem4()
+            btn_addRemItem4.click()
         end
 
-        def addToCartOnesie()
-            btn_addRemOnesie.click()
+        def addToCartItem5()
+            btn_addRemItem5.click()
         end
 
     #end
 
     #Acessando os itens
 
-        def acessarBackpack()
+        def acessarItem1()
             link_backpack.click()
         end
 
-        def acessarBikeLight()
-            link_bikeLight.click()
+        def acessarItem2()
+            link_Item2.click()
         end
 
-        def acessarTShirt()
-            link_tShirt.click()
+        def acessarItem3()
+            link_Item3.click()
         end
 
-        def acessarJacket()
-            link_jacket.click()
+        def acessarItem4()
+            link_Item4.click()
         end
 
-        def acessarOnesie()
-            link_onesie.click()
+        def acessarItem5()
+            link_Item5.click()
         end 
 
-        def acessarRedTShirt()
-            link_redTshirt.click()
+        def acessarRedItem3()
+            link_Item6.click()
         end
 
     #end
