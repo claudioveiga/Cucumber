@@ -6,7 +6,8 @@ class BasePage
 
     # Mapeamento
 
-        def text_tituloPagina
+        def text_titulo
+            #binding.pry
             driver.find_element(:css, '#header_container > div.header_secondary_container > span')
         end
     

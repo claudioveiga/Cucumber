@@ -4,7 +4,7 @@ Quando('acessar a página SauceDemo') do
     @driver.navigate.to("https://www.saucedemo.com/")
 end
 
-Então('faremos a validação da página') do
+Então('serei encaminhado para a página SauceDemo') do
     expect(@login.text_user.text).to include("standard_user")
     expect(@login.text_user.text).to include("locked_out_user")
     expect(@login.text_user.text).to include("problem_user")
@@ -20,6 +20,6 @@ Quando('efetuar o login com a senha errada {string}') do |senhaErrada|
     @login.fazerLogin("standard_user", senhaErrada)
 end
 
-Então('o seguinte texto estará na página {string}') do |texto_testado|
-    expect(@login.driver.page_source).to include(texto_testado)
+Então('serei encaminhado para a página Products') do 
+    expect(@login.driver.page_source).to include("Products")
 end

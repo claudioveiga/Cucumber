@@ -10,12 +10,12 @@ Contexto: Acessando a página SauceDemo
 Quando acessar a página SauceDemo
 
     Cenario: Validando a página SauceDemo
-    Então faremos a validação da página
+    Então serei encaminhado para a página SauceDemo
 
     @login_certo
     Cenario: Login correto
     Quando efetuar o login com o usuário "standard_user"
-    Então o seguinte texto estará na página "Products"
+    Então serei encaminhado para a página Products
 
     Cenario: Login errado
     Quando efetuar o login com a senha errada "senhaerrada" 
