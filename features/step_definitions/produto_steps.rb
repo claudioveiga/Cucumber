@@ -1,5 +1,5 @@
     Então('o seguinte produto será validado {string}') do |produto|
-        pending # Write code here that turns the phrase above into concrete actions
+        expect(@login.text_user.text).to include("standard_user")
     end
   
     Então('o preço do produto será validado {string}') do |preco|
